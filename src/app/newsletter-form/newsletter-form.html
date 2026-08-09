@@ -1,0 +1,9 @@
+<form [formRoot]="newsletterFormInputs" class="content-bottom">
+  <app-form-input
+    [formField]="newsletterFormInputs.email"
+    label="Email address"
+    placeholder="email@company.com"
+    id="email"
+  />
+  <app-button type="submit">Subscribe to monthly newsletter</app-button>
+</form>

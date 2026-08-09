@@ -1,3 +1,8 @@
-:root {
-    
+main {
+  background-color: var(--color-blue-700);
+  min-width: 100dvw;
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

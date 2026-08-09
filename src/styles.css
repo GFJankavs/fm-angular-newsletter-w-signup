@@ -1,4 +1,5 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
   --color-white: #ffffff;
   --color-grey: #949494;
@@ -6,4 +7,59 @@
   --color-blue-700: #36384d;
   --color-red: #ff6155;
   --color-gradient: linear-gradient(90deg, #ff6a3a 0%, #ff527b 100%);
+
+  --spacing-100: 8px;
+  --spacing-200: 16px;
+  --spacing-300: 24px;
+  --spacing-400: 32px;
+  --spacing-500: 40px;
+  --spacing-600: 48px;
+  --spacing-800: 64px;
+  --spacing-900: 72px;
+  --spacing-1300: 104px;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: 'wdth' 100;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: var(--color-blue-800);
+}
+
+.text-preset-1 {
+  font-size: 56px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  font-weight: 700;
+}
+
+.text-preset-1--mobile {
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  font-weight: 700;
+}
+
+.text-preset-2--bold {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0px;
+}
+
+.text-preset-2 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0px;
+}
+
+.text-preset-3 {
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0px;
 }

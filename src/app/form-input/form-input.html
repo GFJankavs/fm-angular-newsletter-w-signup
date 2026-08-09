@@ -1,0 +1,18 @@
+<div class="input-wrapper">
+  <div class="input-top">
+    <label [htmlFor]="id()" class="text-preset-3">{{ label() }}</label>
+    @if (errorText()) {
+      <span class="text-preset-3 input-error-label">{{ errorText() }}</span>
+    }
+  </div>
+  <input
+    [type]="type()"
+    [placeholder]="placeholder()"
+    [value]="value()"
+    (input)="value.set($any($event.target).value)"
+    (blur)="touch.emit()"
+    [id]="id()"
+    [title]="title()"
+    [class]="['text-preset-2', errorText() ? 'error' : '']"
+  />
+</div>

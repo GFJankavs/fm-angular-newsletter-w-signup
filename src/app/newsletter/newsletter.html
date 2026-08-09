@@ -1,0 +1,42 @@
+<section>
+  <img
+    src="/illustration-sign-up-mobile.svg"
+    alt="SVG Image"
+    class="newsletter-illustration-mobile"
+  />
+  <img
+    src="/illustration-sign-up-tablet.svg"
+    alt="SVG Image"
+    class="newsletter-illustration-tablet"
+  />
+  <img
+    src="/illustration-sign-up-desktop.svg"
+    alt="SVG Image"
+    class="newsletter-illustration-desktop"
+  />
+  <div class="newsletter-content">
+    <div class="content-top">
+      <h1 class="text-preset-1--mobile title-mobile">Stay updated!</h1>
+      <h1 class="text-preset-1 title-desktop">Stay updated!</h1>
+      <p class="text-preset-2--mobile">
+        Join 60,000+ product managers receiving monthly updates on:
+      </p>
+      <ul>
+        <li>
+          <img src="/icon-list.svg" alt="Icon" />
+          <span class="text-preset-2">Product discovery and building what matters</span>
+        </li>
+        <li>
+          <img src="/icon-list.svg" alt="Icon" />
+          <span class="text-preset-2">Measuring to ensure updates are a success</span>
+        </li>
+        <li>
+          <img src="/icon-list.svg" alt="Icon" />
+          <span class="text-preset-2">And much more!</span>
+        </li>
+      </ul>
+    </div>
+
+    <app-newsletter-form (emailSubmitted)="handleSubmit($event)" />
+  </div>
+</section>

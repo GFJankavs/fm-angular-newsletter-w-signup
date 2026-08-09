@@ -1,0 +1,14 @@
+button {
+  padding: var(--spacing-200) var(--spacing-600);
+  background: var(--color-blue-800);
+  border-radius: var(--spacing-100);
+  color: var(--color-white);
+  text-align: center;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #ff6a3a 0%, #ff527b 100%);
+}

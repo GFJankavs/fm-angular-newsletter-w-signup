@@ -1,0 +1,15 @@
+<section class="thanks-container">
+  <div class="thanks-top">
+    <img src="/icon-success.svg" alt="Success Icon" />
+    <h1 class="text-preset-1--mobile title-mobile">Thanks for subscribing!</h1>
+    <h1 class="text-preset-1 title-desktop">Thanks for subscribing!</h1>
+    <p class="description text-preset-2">
+      A confirmation email has been sent to
+      <span class="text-preset-2--bold">{{ displayedEmail() }}</span
+      >. Please open it and click the button inside to confirm your subscription
+    </p>
+  </div>
+  <div class="thanks-bottom">
+    <app-button (click)="handleDismiss()">Dismiss message</app-button>
+  </div>
+</section>
